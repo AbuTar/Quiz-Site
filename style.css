@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #f5efe6;
+    background: #fef0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body{
 
 /* START SCREEN */
 #start-screen{
-    color: #e86a33;
+    color: #ee6969;
     margin-bottom:20px;
     font-size: 2.5rem;
 
@@ -94,8 +94,70 @@ body{
     color:#28a745
 }
 
-.answer-button.correct{
+.answer-button.incorrect{
     background-color: #fff0f0;
     border: color #ffbdbd;
     color:#dc3545;
+}
+
+/* This is the progress bar container */
+.progress-bar{
+    height:10px;
+    background-color: #fdf0f0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+/* The actual progress */
+.progress{
+    height: 100%;
+    background-color: #ee6969;
+    width: 0%;
+    transition: width 0.3s easel
+
+}
+
+/* RESULT SCREEN */
+
+#result-scren h1{
+    color: #d65f5f;
+    margin-bottom:30px;
+}
+
+.result-info {
+    background-color: #fdf0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.result-info p{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+button{
+    background-color: #ee6969;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d65f5f;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 500px){
+    .screen{
+        padding: 1rem;
+    }
+    
+    #start-screen h1 {
+        font-size: 2rem;
+    }
 }
