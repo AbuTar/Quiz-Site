@@ -1,0 +1,101 @@
+/* Default Styling for Page */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #f5efe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: sans-serif;
+
+}
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+/* SCREEN STYLING */
+/* Decides which of the screens in the html file will be displayed to the user */
+.screen.active{
+    display: block;
+}
+
+/* START SCREEN */
+#start-screen{
+    color: #e86a33;
+    margin-bottom:20px;
+    font-size: 2.5rem;
+
+}
+
+.quiz-header{
+    margin-bottom: 2rem;
+}
+
+#question-text{
+    color:#333;
+    font-size: 1.5rem;
+    margin: bottom 1rem;
+    line-height: 1.5;
+}
+
+.quiz-information{
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+
+}
+
+.answer-button{
+    background-color: #f8f0e5;
+    color:#333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor:pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+
+}
+
+.answer-button:hover{
+    background-color: #eadbc8;
+    border-color: #dac0da;
+
+}
+
+.answer-button.correct{
+    background-color: #e6fff0;
+    border: color #a3f0c4;
+    color:#28a745
+}
+
+.answer-button.correct{
+    background-color: #fff0f0;
+    border: color #ffbdbd;
+    color:#dc3545;
+}
